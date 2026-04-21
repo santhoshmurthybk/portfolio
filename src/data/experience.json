@@ -1,0 +1,65 @@
+[
+  {
+    "id": "nagarro",
+    "startDate": "Mar, 2024",
+    "endDate": null,
+    "title": "Senior Staff Engineer, Tech Lead",
+    "company": "Nagarro Software",
+    "location": "India",
+    "description": "Developing microservices and front-end web components in the following technologies: React, Node, AWS, MongoDB"
+  },
+  {
+    "id": "oracle-cerner",
+    "startDate": "Apr, 2022",
+    "endDate": "Mar, 2024",
+    "title": "Software Engineer III",
+    "company": "Oracle Cerner",
+    "location": "India",
+    "description": "Developing microservices and front-end web components in the following technologies: React, Angular, Node"
+  },
+  {
+    "id": "fluke",
+    "startDate": "Jun, 2021",
+    "endDate": "Apr, 2022",
+    "title": "Software Design Engineer",
+    "company": "Fluke Corporation",
+    "location": "India",
+    "description": "Developing microservices and front-end web components in the following technologies: React, Redux, AWS S3, RDS, API Gateway, SignalR"
+  },
+  {
+    "id": "cerner-senior",
+    "startDate": "Nov, 2019",
+    "endDate": "Jun, 2021",
+    "title": "Associate Senior Software Engineer",
+    "company": "Cerner Corporation",
+    "location": "India",
+    "description": "Developed web services and front-end web components in the following technologies: JavaScript, React, GraphQL, Node.js, Express"
+  },
+  {
+    "id": "cerner",
+    "startDate": "Aug, 2018",
+    "endDate": "Nov, 2019",
+    "title": "Software Engineer",
+    "company": "Cerner Corporation",
+    "location": "India",
+    "description": "Worked as part of the application development team, contributing to team projects and developing applications and services"
+  },
+  {
+    "id": "ntt-senior",
+    "startDate": "Dec, 2016",
+    "endDate": "Aug, 2018",
+    "title": "Software Development Senior Associate",
+    "company": "NTT Data Services",
+    "location": "India",
+    "description": "Developed custom modules & interfaces in C# .NET technologies"
+  },
+  {
+    "id": "ntt-intern",
+    "startDate": "Aug, 2016",
+    "endDate": "Dec, 2016",
+    "title": "Software Development Intern",
+    "company": "NTT Data Services",
+    "location": "India",
+    "description": "Trained in C# .NET technologies and participated in project development"
+  }
+]

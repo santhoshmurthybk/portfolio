@@ -1,0 +1,12 @@
+[
+  { "id": "node", "name": "Node", "proficiency": 90 },
+  { "id": "aws", "name": "AWS", "proficiency": 75 },
+  { "id": "html-css", "name": "HTML/CSS", "proficiency": 85 },
+  { "id": "react", "name": "React", "proficiency": 80 },
+  { "id": "graphql", "name": "GraphQL API", "proficiency": 80 },
+  { "id": "rest", "name": "Restful API", "proficiency": 70 },
+  { "id": "sql", "name": "SQL", "proficiency": 80 },
+  { "id": "mongodb", "name": "MongoDB", "proficiency": 80 },
+  { "id": "jenkins", "name": "Jenkins", "proficiency": 60 },
+  { "id": "docker", "name": "Docker", "proficiency": 50 }
+]

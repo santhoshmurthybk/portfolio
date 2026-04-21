@@ -1,0 +1,23 @@
+[
+  {
+    "id": "phone",
+    "type": "phone",
+    "label": "Phone",
+    "value": "+91 9876543210",
+    "icon": "BiPhone"
+  },
+  {
+    "id": "email",
+    "type": "email",
+    "label": "Email",
+    "value": "santhosh@example.com",
+    "icon": "BiEnvelope"
+  },
+  {
+    "id": "address",
+    "type": "address",
+    "label": "Location",
+    "value": "Hyderabad, India",
+    "icon": "BiMap"
+  }
+]

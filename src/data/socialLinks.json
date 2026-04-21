@@ -1,0 +1,38 @@
+[
+  {
+    "id": "github",
+    "platform": "GitHub",
+    "url": "https://github.com/santhoshbk",
+    "icon": "BiLogoGithub"
+  },
+  {
+    "id": "linkedin",
+    "platform": "LinkedIn",
+    "url": "https://linkedin.com/in/santhoshbk",
+    "icon": "BiLogoLinkedin"
+  },
+  {
+    "id": "facebook",
+    "platform": "Facebook",
+    "url": "https://facebook.com/santhoshbk",
+    "icon": "BiLogoFacebook"
+  },
+  {
+    "id": "instagram",
+    "platform": "Instagram",
+    "url": "https://instagram.com/santhoshbk",
+    "icon": "BiLogoInstagram"
+  },
+  {
+    "id": "twitter",
+    "platform": "Twitter",
+    "url": "https://twitter.com/santhoshbk",
+    "icon": "BiLogoTwitter"
+  },
+  {
+    "id": "wordpress",
+    "platform": "WordPress",
+    "url": "https://santhoshbk.wordpress.com",
+    "icon": "BiLogoWordpress"
+  }
+]
