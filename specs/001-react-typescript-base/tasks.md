@@ -27,7 +27,7 @@
 - [ ] T001 Create package.json with name, version, scripts, and engines field (Node 18+)
 - [ ] T002 Install runtime dependencies: react, react-dom, react-router-dom
 - [ ] T003 Install dev dependencies: typescript, vite, @vitejs/plugin-react, vitest, @testing-library/react, @testing-library/jest-dom, @testing-library/user-event, jsdom, eslint, prettier, @typescript-eslint/eslint-plugin, @typescript-eslint/parser, eslint-plugin-react, eslint-plugin-react-hooks
-- [ ] T004 Create folder structure per plan.md: src/components/, src/pages/, src/hooks/, src/utils/, src/types/, src/styles/, src/constants/, public/
+- [ ] T004 Create folder structure per plan.md: src/components/, src/pages/, src/hooks/, src/services/, src/utils/, src/types/, src/styles/, src/constants/, public/
 
 ---
 
@@ -136,7 +136,7 @@
 
 - [ ] T041 [P] Create README.md with project description, prerequisites, quickstart, available scripts, and folder structure
 - [ ] T042 [P] Update package.json: set correct version (0.1.0), add description, repository, keywords, license
-- [ ] T043 Verify all success criteria: SC-001 (install < 3min), SC-002 (build < 60s), SC-003 (test < 10s), SC-004 (type-check pass), SC-005 (lint pass), SC-006 (Button 100% coverage), SC-007 (bundle < 200KB)
+- [ ] T043 Verify all success criteria: SC-001 (install < 3min), SC-002 (build < 60s), SC-003 (test < 10s), SC-004 (type-check pass), SC-005 (lint pass), SC-006 (Button 100% coverage), SC-007 (bundle < 200KB), FR-012 (engines field in package.json)
 
 ---
 

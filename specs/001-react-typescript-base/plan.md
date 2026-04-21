@@ -71,6 +71,7 @@ src/
 │       ├── NotFound.tsx
 │       └── index.ts
 ├── hooks/               # Shared custom hooks
+├── services/            # API clients (placeholder for future)
 ├── utils/               # Pure utility functions
 ├── types/               # Shared TypeScript types
 ├── styles/              # Global styles and CSS reset
@@ -85,6 +86,8 @@ public/
 ```
 
 **Structure Decision**: Single frontend project following constitution's folder structure. Using `pages/` instead of `features/` for route components since this is a base setup with no domain features yet.
+
+> **Constitution Deviation Note**: The constitution specifies `src/features/{feature}/components/` for feature-specific components. This base setup uses `src/pages/` for route-level components because: (1) no domain features exist yet, (2) pages are presentation-only without business logic, (3) features folder will be added when domain features are implemented.
 
 ## Complexity Tracking
 
