@@ -1,71 +1,54 @@
-import { Suspense } from 'react';
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import { Home } from '@pages/Home';
-import { About } from '@pages/About';
-import { NotFound } from '@pages/NotFound';
+import { useEffect } from 'react';
+import { Preloader } from '@components/Preloader';
+import { Header } from './layout/Header';
+import { Footer } from './layout/Footer';
+import { Hero } from './sections/Hero';
+import { About } from './sections/About';
+import { Portfolio } from './sections/Portfolio';
+import { Contact } from './sections/Contact';
+import { useTheme } from './hooks/useTheme';
+import { useScrollSpy } from './hooks/useScrollSpy';
 
-function LoadingFallback() {
-  return (
-    <div
-      style={{
-        flex: 1,
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        color: '#6b7280',
-      }}
-    >
-      Loading...
-    </div>
-  );
-}
-
-function Navigation() {
-  return (
-    <nav
-      style={{
-        display: 'flex',
-        gap: '1.5rem',
-        padding: '1rem 2rem',
-        backgroundColor: '#ffffff',
-        borderBottom: '1px solid #e5e7eb',
-      }}
-    >
-      <Link
-        to="/"
-        style={{
-          color: '#4f46e5',
-          textDecoration: 'none',
-          fontWeight: 500,
-        }}
-      >
-        Home
-      </Link>
-      <Link
-        to="/about"
-        style={{
-          color: '#4f46e5',
-          textDecoration: 'none',
-          fontWeight: 500,
-        }}
-      >
-        About
-      </Link>
-    </nav>
-  );
-}
+const SECTION_IDS = ['home', 'about', 'portfolio', 'contact'];
 
 export function App() {
+  const activeSection = useScrollSpy({ sectionIds: SECTION_IDS, offset: 100 });
+  useTheme(); // Initialize theme
+
+  // Handle hash navigation on load
+  useEffect(() => {
+    const hash = window.location.hash.replace('#', '');
+    if (hash) {
+      // Scroll to section after a brief delay for DOM to be ready
+      setTimeout(() => {
+        const element = document.getElementById(hash);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    }
+  }, []);
+
   return (
-    <BrowserRouter>
-      <Navigation />
-      <Suspense fallback={<LoadingFallback />}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </Suspense>
-    </BrowserRouter>
+    <>
+      <Preloader />
+      <Header activeSection={activeSection} />
+      
+      <main id="main-content" className="pt-16">
+        {/* Hero Section */}
+        <Hero />
+
+        {/* About Section */}
+        <About />
+
+        {/* Portfolio Section */}
+        <Portfolio />
+
+        {/* Contact Section */}
+        <Contact />
+      </main>
+
+      <Footer />
+    </>
   );
 }
