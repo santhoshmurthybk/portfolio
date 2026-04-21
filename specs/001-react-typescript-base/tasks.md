@@ -24,10 +24,10 @@
 
 **Purpose**: Initialize npm project with all required dependencies
 
-- [ ] T001 Create package.json with name, version, scripts, and engines field (Node 18+)
-- [ ] T002 Install runtime dependencies: react, react-dom, react-router-dom
-- [ ] T003 Install dev dependencies: typescript, vite, @vitejs/plugin-react, vitest, @testing-library/react, @testing-library/jest-dom, @testing-library/user-event, jsdom, eslint, prettier, @typescript-eslint/eslint-plugin, @typescript-eslint/parser, eslint-plugin-react, eslint-plugin-react-hooks
-- [ ] T004 Create folder structure per plan.md: src/components/, src/pages/, src/hooks/, src/services/, src/utils/, src/types/, src/styles/, src/constants/, public/
+- [X] T001 Create package.json with name, version, scripts, and engines field (Node 18+)
+- [X] T002 Install runtime dependencies: react, react-dom, react-router-dom
+- [X] T003 Install dev dependencies: typescript, vite, @vitejs/plugin-react, vitest, @testing-library/react, @testing-library/jest-dom, @testing-library/user-event, jsdom, eslint, prettier, @typescript-eslint/eslint-plugin, @typescript-eslint/parser, eslint-plugin-react, eslint-plugin-react-hooks
+- [X] T004 Create folder structure per plan.md: src/components/, src/pages/, src/hooks/, src/services/, src/utils/, src/types/, src/styles/, src/constants/, public/
 
 ---
 
@@ -37,12 +37,12 @@
 
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete
 
-- [ ] T005 Create tsconfig.json with strict mode, React JSX, path aliases, and modern ES target
-- [ ] T006 Create src/vite-env.d.ts with ImportMetaEnv interface for VITE_APP_TITLE and VITE_APP_VERSION
-- [ ] T007 [P] Create src/types/utils.ts with PartialExcept, PropsOf, AsyncReturnType utility types
-- [ ] T008 [P] Create .env.example with VITE_APP_TITLE=Portfolio and VITE_APP_VERSION=0.1.0
-- [ ] T009 [P] Create .env with default values copied from .env.example
-- [ ] T010 [P] Create public/favicon.svg with simple SVG icon
+- [X] T005 Create tsconfig.json with strict mode, React JSX, path aliases, and modern ES target
+- [X] T006 Create src/vite-env.d.ts with ImportMetaEnv interface for VITE_APP_TITLE and VITE_APP_VERSION
+- [X] T007 [P] Create src/types/utils.ts with PartialExcept, PropsOf, AsyncReturnType utility types
+- [X] T008 [P] Create .env.example with VITE_APP_TITLE=Portfolio and VITE_APP_VERSION=0.1.0
+- [X] T009 [P] Create .env with default values copied from .env.example
+- [X] T010 [P] Create public/favicon.svg with simple SVG icon
 
 **Checkpoint**: Foundation ready - user story implementation can now begin
 
@@ -56,22 +56,22 @@
 
 ### Implementation for User Story 1
 
-- [ ] T011 [US1] Create vite.config.ts with React plugin, modern browser targets (Chrome 90+, Firefox 90+, Safari 15+, Edge 90+), and build settings
-- [ ] T012 [US1] Create index.html with root div, meta tags, and script entry pointing to src/main.tsx
-- [ ] T013 [US1] Create src/main.tsx with React 18 createRoot and StrictMode wrapping App
-- [ ] T014 [US1] Create src/styles/global.css with CSS reset and base styles
-- [ ] T015 [US1] Create src/constants/env.ts with APP_CONFIG object using import.meta.env
-- [ ] T016 [P] [US1] Create src/components/Button/Button.tsx with ButtonProps interface and variant/size props
-- [ ] T017 [P] [US1] Create src/components/Button/Button.module.css with button, primary, secondary, ghost, small, medium, large classes
-- [ ] T018 [P] [US1] Create src/components/Button/index.ts exporting Button component and ButtonProps type
-- [ ] T019 [P] [US1] Create src/pages/Home/Home.tsx with welcome message and Button component demo
-- [ ] T020 [P] [US1] Create src/pages/Home/index.ts exporting Home as lazy-loaded component
-- [ ] T021 [P] [US1] Create src/pages/About/About.tsx with application info
-- [ ] T022 [P] [US1] Create src/pages/About/index.ts exporting About as lazy-loaded component
-- [ ] T023 [P] [US1] Create src/pages/NotFound/NotFound.tsx with 404 message and link to home
-- [ ] T024 [P] [US1] Create src/pages/NotFound/index.ts exporting NotFound as lazy-loaded component
-- [ ] T025 [US1] Create src/App.tsx with React Router v6 BrowserRouter, Routes for /, /about, and * (404)
-- [ ] T026 [US1] Add npm scripts to package.json: dev, build, preview
+- [X] T011 [US1] Create vite.config.ts with React plugin, modern browser targets (Chrome 90+, Firefox 90+, Safari 15+, Edge 90+), and build settings
+- [X] T012 [US1] Create index.html with root div, meta tags, and script entry pointing to src/main.tsx
+- [X] T013 [US1] Create src/main.tsx with React 18 createRoot and StrictMode wrapping App
+- [X] T014 [US1] Create src/styles/global.css with CSS reset and base styles
+- [X] T015 [US1] Create src/constants/env.ts with APP_CONFIG object using import.meta.env
+- [X] T016 [P] [US1] Create src/components/Button/Button.tsx with ButtonProps interface and variant/size props
+- [X] T017 [P] [US1] Create src/components/Button/Button.module.css with button, primary, secondary, ghost, small, medium, large classes
+- [X] T018 [P] [US1] Create src/components/Button/index.ts exporting Button component and ButtonProps type
+- [X] T019 [P] [US1] Create src/pages/Home/Home.tsx with welcome message and Button component demo
+- [X] T020 [P] [US1] Create src/pages/Home/index.ts exporting Home as lazy-loaded component
+- [X] T021 [P] [US1] Create src/pages/About/About.tsx with application info
+- [X] T022 [P] [US1] Create src/pages/About/index.ts exporting About as lazy-loaded component
+- [X] T023 [P] [US1] Create src/pages/NotFound/NotFound.tsx with 404 message and link to home
+- [X] T024 [P] [US1] Create src/pages/NotFound/index.ts exporting NotFound as lazy-loaded component
+- [X] T025 [US1] Create src/App.tsx with React Router v6 BrowserRouter, Routes for /, /about, and * (404)
+- [X] T026 [US1] Add npm scripts to package.json: dev, build, preview
 
 **Checkpoint**: User Story 1 complete - `npm run dev` starts application with working routes and HMR
 
@@ -85,11 +85,11 @@
 
 ### Implementation for User Story 2
 
-- [ ] T027 [P] [US2] Create eslint.config.js with flat config: eslint:recommended, react, react-hooks, typescript-eslint (relaxed: errors for critical, warnings for best practices)
-- [ ] T028 [P] [US2] Create prettier.config.js with singleQuote, trailingComma, semi settings
-- [ ] T029 [P] [US2] Create .prettierignore with dist/, coverage/, node_modules/
-- [ ] T030 [US2] Add npm scripts to package.json: lint, lint:fix, type-check, format, format:check
-- [ ] T031 [US2] Run lint and type-check to verify zero errors on existing source files
+- [X] T027 [P] [US2] Create eslint.config.js with flat config: eslint:recommended, react, react-hooks, typescript-eslint (relaxed: errors for critical, warnings for best practices)
+- [X] T028 [P] [US2] Create prettier.config.js with singleQuote, trailingComma, semi settings
+- [X] T029 [P] [US2] Create .prettierignore with dist/, coverage/, node_modules/
+- [X] T030 [US2] Add npm scripts to package.json: lint, lint:fix, type-check, format, format:check
+- [X] T031 [US2] Run lint and type-check to verify zero errors on existing source files
 
 **Checkpoint**: User Story 2 complete - all quality commands pass without errors
 
@@ -103,11 +103,11 @@
 
 ### Implementation for User Story 3
 
-- [ ] T032 [US3] Create vitest.config.ts with jsdom environment, CSS modules handling, coverage settings, and setupFiles
-- [ ] T033 [US3] Create src/test/setup.ts with @testing-library/jest-dom import
-- [ ] T034 [US3] Create src/components/Button/Button.test.tsx with tests for: renders children, handles click, applies variant classes, applies size classes, disabled state
-- [ ] T035 [US3] Add npm scripts to package.json: test, test:run, test:coverage
-- [ ] T036 [US3] Run test:coverage to verify Button component achieves 100% coverage
+- [X] T032 [US3] Create vitest.config.ts with jsdom environment, CSS modules handling, coverage settings, and setupFiles
+- [X] T033 [US3] Create src/test/setup.ts with @testing-library/jest-dom import
+- [X] T034 [US3] Create src/components/Button/Button.test.tsx with tests for: renders children, handles click, applies variant classes, applies size classes, disabled state
+- [X] T035 [US3] Add npm scripts to package.json: test, test:run, test:coverage
+- [X] T036 [US3] Run test:coverage to verify Button component achieves 100% coverage
 
 **Checkpoint**: User Story 3 complete - test suite runs with passing tests and coverage reports
 
@@ -121,10 +121,10 @@
 
 ### Implementation for User Story 4
 
-- [ ] T037 [US4] Update vite.config.ts build section to disable source maps, configure chunk splitting for vendor/react
-- [ ] T038 [US4] Add .gitignore with node_modules/, dist/, coverage/, .env (keep .env.example)
-- [ ] T039 [US4] Run npm run build and verify: dist/ created, no source maps, bundle < 200KB gzipped
-- [ ] T040 [US4] Run npm run preview and verify production build serves correctly
+- [X] T037 [US4] Update vite.config.ts build section to disable source maps, configure chunk splitting for vendor/react
+- [X] T038 [US4] Add .gitignore with node_modules/, dist/, coverage/, .env (keep .env.example)
+- [X] T039 [US4] Run npm run build and verify: dist/ created, no source maps, bundle < 200KB gzipped
+- [X] T040 [US4] Run npm run preview and verify production build serves correctly
 
 **Checkpoint**: User Story 4 complete - production build succeeds with optimized output
 
@@ -134,9 +134,9 @@
 
 **Purpose**: Documentation, final verification, and cleanup
 
-- [ ] T041 [P] Create README.md with project description, prerequisites, quickstart, available scripts, and folder structure
-- [ ] T042 [P] Update package.json: set correct version (0.1.0), add description, repository, keywords, license
-- [ ] T043 Verify all success criteria: SC-001 (install < 3min), SC-002 (build < 60s), SC-003 (test < 10s), SC-004 (type-check pass), SC-005 (lint pass), SC-006 (Button 100% coverage), SC-007 (bundle < 200KB), FR-012 (engines field in package.json)
+- [X] T041 [P] Create README.md with project description, prerequisites, quickstart, available scripts, and folder structure
+- [X] T042 [P] Update package.json: set correct version (0.1.0), add description, repository, keywords, license
+- [X] T043 Verify all success criteria: SC-001 (install < 3min), SC-002 (build < 60s), SC-003 (test < 10s), SC-004 (type-check pass), SC-005 (lint pass), SC-006 (Button 100% coverage), SC-007 (bundle < 200KB), FR-012 (engines field in package.json)
 
 ---
 

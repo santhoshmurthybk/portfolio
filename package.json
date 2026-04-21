@@ -1,0 +1,50 @@
+{
+  "name": "portfolio",
+  "description": "A modern React + TypeScript portfolio application built with Vite",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "keywords": ["react", "typescript", "vite", "portfolio"],
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint \"src/**/*.{ts,tsx}\"",
+    "lint:fix": "eslint \"src/**/*.{ts,tsx}\" --fix",
+    "type-check": "tsc --noEmit",
+    "format": "prettier --write \"src/**/*.{ts,tsx,css,json}\"",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx,css,json}\"",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "test:coverage": "vitest run --coverage"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-router-dom": "6.22.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "8.57.0",
+    "@testing-library/jest-dom": "6.4.5",
+    "@testing-library/react": "15.0.7",
+    "@testing-library/user-event": "14.5.2",
+    "@types/react": "18.3.2",
+    "@types/react-dom": "18.3.0",
+    "@typescript-eslint/eslint-plugin": "7.8.0",
+    "@typescript-eslint/parser": "7.8.0",
+    "@vitejs/plugin-react": "4.2.1",
+    "@vitest/coverage-v8": "1.6.0",
+    "eslint": "8.57.0",
+    "eslint-plugin-react": "7.34.1",
+    "eslint-plugin-react-hooks": "4.6.2",
+    "jsdom": "24.0.0",
+    "prettier": "3.2.5",
+    "typescript": "5.4.5",
+    "vite": "5.2.11",
+    "vitest": "1.6.0"
+  }
+}
