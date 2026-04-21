@@ -145,8 +145,11 @@ A visitor uses the hamburger menu on mobile or the navigation links to smoothly 
 - **FR-017**: System MUST use functional React components with hooks only (no class components)
 - **FR-018**: System MUST externalize portfolio data (skills, experience, projects, contact) into structured data files
 - **FR-019**: System MUST use Tailwind CSS for styling with a single indigo/purple accent color
-- **FR-020**: System MUST use subtle elevation shadows (hybrid approach) without full neumorphic effects
-- **FR-021**: System MUST display a preloader animation while the page content loads
+- **FR-020**: System MUST use subtle elevation shadows: `shadow-sm` (0 1px 2px) for default state, `shadow-md` (0 4px 6px) for hover/elevated states, with dark mode using `shadow-gray-900/30` opacity variants
+- **FR-021**: System MUST display a preloader animation (3 bouncing dots) for minimum 500ms, dismissing when DOMContentLoaded fires, with a 200ms fade-out transition
+- **FR-022**: System MUST display fallback content when CV PDF fails to load ("CV temporarily unavailable" message with retry link)
+- **FR-023**: System MUST display placeholder images when project images fail to load
+- **FR-024**: System MUST use React Router with hash-based navigation (e.g., `/#about`, `/#portfolio`) for section navigation
 
 ### Key Entities
 
@@ -162,9 +165,9 @@ A visitor uses the hamburger menu on mobile or the navigation links to smoothly 
 
 ### Measurable Outcomes
 
-- **SC-001**: Portfolio homepage loads and displays all hero section elements within 2 seconds on 3G connection
+- **SC-001**: Portfolio homepage loads and displays all hero section elements within 2 seconds on 3G connection (validated via Lighthouse throttled performance audit)
 - **SC-002**: All navigation links correctly scroll to their target sections with smooth animation
-- **SC-003**: Theme toggle switches all UI colors within 100ms with no visual glitches
+- **SC-003**: Theme toggle switches all UI colors within 100ms with no layout shift (CLS < 0.1), no flash of unstyled content, colors transition via CSS transition property
 - **SC-004**: All 3 tabs in About section correctly display their respective content when clicked
 - **SC-005**: Portfolio renders correctly on viewport widths from 320px to 2560px
 - **SC-006**: All external links (GitHub, social media) open in new browser tabs
