@@ -2,6 +2,16 @@
 
 A modern React + TypeScript portfolio application built with Vite.
 
+## 🤖 AI-Powered Development
+
+This project was entirely developed using:
+- **[SpecKit](https://github.com/spec-kit/spec-kit)** - AI-driven specification and planning workflow
+- **GitHub Copilot** with **Claude** model - AI pair programming assistant
+
+Showcasing modern AI-assisted software development practices.
+
+📂 **Repository**: [github.com/santhoshmurthybk/portfolio](https://github.com/santhoshmurthybk/portfolio/)
+
 ## Prerequisites
 
 - Node.js >= 18.0.0

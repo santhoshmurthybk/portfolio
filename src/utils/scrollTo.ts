@@ -13,6 +13,7 @@ interface ScrollToOptions {
 export function scrollTo({ targetId, offset = 0, behavior = 'smooth' }: ScrollToOptions): void {
   const element = document.getElementById(targetId);
   if (!element) {
+    // eslint-disable-next-line no-console
     console.warn(`Element with id "${targetId}" not found`);
     return;
   }

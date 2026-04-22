@@ -1,3 +1,5 @@
+import { BiLogoGithub } from 'react-icons/bi';
+
 /**
  * Footer component with copyright and credits
  */
@@ -14,6 +16,24 @@ export function Footer() {
           <p className="text-xs text-gray-500 dark:text-gray-500 mt-2">
             Built with React, TypeScript, and Tailwind CSS
           </p>
+          <div className="flex items-center justify-center gap-2 mt-3">
+            <span className="text-xs text-gray-500 dark:text-gray-500">
+              Developed using{' '}
+              <span className="font-medium text-primary-600 dark:text-primary-400">SpecKit</span>
+              {' '}+{' '}
+              <span className="font-medium text-primary-600 dark:text-primary-400">GitHub Copilot (Claude)</span>
+            </span>
+            <a
+              href="https://github.com/santhoshmurthybk/portfolio/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 text-xs text-gray-500 hover:text-primary-600 dark:text-gray-500 dark:hover:text-primary-400 transition-colors"
+              aria-label="View source on GitHub"
+            >
+              <BiLogoGithub className="w-4 h-4" />
+              <span>Source</span>
+            </a>
+          </div>
         </div>
       </div>
     </footer>
