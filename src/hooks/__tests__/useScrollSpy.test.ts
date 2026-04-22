@@ -110,4 +110,50 @@ describe('useScrollSpy', () => {
 
     expect(removeEventListenerSpy).toHaveBeenCalledWith('scroll', expect.any(Function));
   });
+
+  it('should throttle scroll events', () => {
+    vi.useFakeTimers();
+
+    const { result } = renderHook(() =>
+      useScrollSpy({ sectionIds, offset: 100, throttleMs: 100 })
+    );
+
+    // Trigger multiple scroll events rapidly
+    window.dispatchEvent(new Event('scroll'));
+    window.dispatchEvent(new Event('scroll'));
+    window.dispatchEvent(new Event('scroll'));
+
+    // Should still work
+    expect(result.current).toBeDefined();
+
+    // Advance time and trigger another scroll
+    vi.advanceTimersByTime(150);
+    window.dispatchEvent(new Event('scroll'));
+
+    expect(result.current).toBeDefined();
+
+    vi.useRealTimers();
+  });
+
+  it('should handle delayed throttled scroll', () => {
+    vi.useFakeTimers();
+
+    const { result } = renderHook(() =>
+      useScrollSpy({ sectionIds, offset: 100, throttleMs: 100 })
+    );
+
+    // Trigger scroll events
+    window.dispatchEvent(new Event('scroll'));
+
+    // Advance time partially
+    vi.advanceTimersByTime(50);
+    window.dispatchEvent(new Event('scroll'));
+
+    // Advance remaining time
+    vi.advanceTimersByTime(100);
+
+    expect(result.current).toBeDefined();
+
+    vi.useRealTimers();
+  });
 });

@@ -128,4 +128,42 @@ describe('useTheme', () => {
     
     expect(result.current.theme).toBe('dark');
   });
+
+  it('should add event listener for system theme changes', () => {
+    const addEventListenerSpy = vi.fn();
+    mockMatchMedia.mockImplementation((query: string) => ({
+      matches: false,
+      media: query,
+      onchange: null,
+      addEventListener: addEventListenerSpy,
+      removeEventListener: vi.fn(),
+      addListener: vi.fn(),
+      removeListener: vi.fn(),
+      dispatchEvent: vi.fn(),
+    }));
+
+    renderHook(() => useTheme());
+
+    expect(addEventListenerSpy).toHaveBeenCalledWith('change', expect.any(Function));
+  });
+
+  it('should cleanup event listeners on unmount', () => {
+    const removeEventListenerSpy = vi.fn();
+    mockMatchMedia.mockImplementation((query: string) => ({
+      matches: false,
+      media: query,
+      onchange: null,
+      addEventListener: vi.fn(),
+      removeEventListener: removeEventListenerSpy,
+      addListener: vi.fn(),
+      removeListener: vi.fn(),
+      dispatchEvent: vi.fn(),
+    }));
+
+    const { unmount } = renderHook(() => useTheme());
+
+    unmount();
+
+    expect(removeEventListenerSpy).toHaveBeenCalledWith('change', expect.any(Function));
+  });
 });

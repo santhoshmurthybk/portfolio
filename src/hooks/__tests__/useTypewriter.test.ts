@@ -98,4 +98,44 @@ describe('useTypewriter', () => {
 
     expect(result.current.phraseIndex).toBe(0);
   });
+
+  it('should handle deletion behavior', () => {
+    const { result } = renderHook(() =>
+      useTypewriter({
+        phrases: ['A'],
+        typingSpeed: 50,
+        deletingSpeed: 50,
+        pauseDuration: 50,
+        loop: true,
+      })
+    );
+
+    // Type 'A'
+    act(() => {
+      vi.advanceTimersByTime(50);
+    });
+    expect(result.current.text).toBe('A');
+
+    // Allow time for pause and deletion cycle
+    act(() => {
+      vi.advanceTimersByTime(200);
+    });
+
+    // Text should have changed (either deleted or started over)
+    expect(result.current.text.length).toBeLessThanOrEqual(1);
+  });
+
+  it('should handle multiple phrases array', () => {
+    const { result } = renderHook(() =>
+      useTypewriter({
+        phrases: ['A', 'B', 'C'],
+        typingSpeed: 50,
+        loop: true,
+      })
+    );
+
+    // Initial state
+    expect(result.current.phraseIndex).toBe(0);
+    expect(result.current.text).toBe('');
+  });
 });

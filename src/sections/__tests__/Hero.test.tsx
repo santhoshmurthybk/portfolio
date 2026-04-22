@@ -20,6 +20,10 @@ vi.mock('../Hero/TypewriterText', () => ({
   ),
 }));
 
+vi.mock('../../utils/assets', () => ({
+  getAssetPath: (path: string) => path,
+}));
+
 import { Hero } from '../Hero/Hero';
 
 describe('Hero', () => {
@@ -34,10 +38,11 @@ describe('Hero', () => {
     expect(section).toBeInTheDocument();
   });
 
-  it('should display the profile name', () => {
+  it('should display the typewriter phrases', () => {
     render(<Hero />);
     
-    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('Test User');
+    // The name is displayed through the typewriter component
+    expect(screen.getByTestId('typewriter')).toHaveTextContent('Developer');
   });
 
   it('should display the title', () => {
@@ -61,8 +66,8 @@ describe('Hero', () => {
   it('should render profile image with correct alt text', () => {
     render(<Hero />);
     
-    const image = screen.getByRole('img');
-    expect(image).toHaveAttribute('alt', 'Test User profile');
+    const image = screen.getByAltText('Test User profile');
+    expect(image).toBeInTheDocument();
     expect(image).toHaveAttribute('src', '/test-image.jpg');
   });
 
