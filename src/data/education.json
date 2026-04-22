@@ -4,17 +4,8 @@
     "startDate": "2012",
     "endDate": "2016",
     "degree": "Bachelor of Technology",
-    "field": "Computer Science and Engineering",
-    "institution": "JNTU Hyderabad",
-    "location": "India"
-  },
-  {
-    "id": "intermediate",
-    "startDate": "2010",
-    "endDate": "2012",
-    "degree": "Intermediate",
-    "field": "Mathematics, Physics, Chemistry",
-    "institution": "Board of Intermediate Education",
+    "field": "Electronics and Communication Engineering",
+    "institution": "VTU",
     "location": "India"
   }
 ]

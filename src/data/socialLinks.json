@@ -2,37 +2,37 @@
   {
     "id": "github",
     "platform": "GitHub",
-    "url": "https://github.com/santhoshbk",
+    "url": "https://github.com/santhoshmurthybk",
     "icon": "BiLogoGithub"
   },
   {
     "id": "linkedin",
     "platform": "LinkedIn",
-    "url": "https://linkedin.com/in/santhoshbk",
+    "url": "www.linkedin.com/in/santhosh-murthy-bk",
     "icon": "BiLogoLinkedin"
   },
   {
     "id": "facebook",
     "platform": "Facebook",
-    "url": "https://facebook.com/santhoshbk",
+    "url": "https://www.facebook.com/santhosh.murthy.317",
     "icon": "BiLogoFacebook"
   },
   {
     "id": "instagram",
     "platform": "Instagram",
-    "url": "https://instagram.com/santhoshbk",
+    "url": "https://www.instagram.com/santhoshmurthybk",
     "icon": "BiLogoInstagram"
   },
   {
     "id": "twitter",
     "platform": "Twitter",
-    "url": "https://twitter.com/santhoshbk",
+    "url": "https://twitter.com/SanthoshMBK",
     "icon": "BiLogoTwitter"
   },
   {
     "id": "wordpress",
     "platform": "WordPress",
-    "url": "https://santhoshbk.wordpress.com",
+    "url": "https://santhoshmurthybk.wordpress.com/",
     "icon": "BiLogoWordpress"
   }
 ]

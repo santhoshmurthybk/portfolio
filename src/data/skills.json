@@ -1,6 +1,8 @@
 [
   { "id": "node", "name": "Node", "proficiency": 90 },
   { "id": "aws", "name": "AWS", "proficiency": 75 },
+  { "id": "aws-cdk", "name": "AWS CDK", "proficiency": 75 },
+  { "id": "sdd", "name": "Spec Driven Development", "proficiency": 75 },
   { "id": "html-css", "name": "HTML/CSS", "proficiency": 85 },
   { "id": "react", "name": "React", "proficiency": 80 },
   { "id": "graphql", "name": "GraphQL API", "proficiency": 80 },

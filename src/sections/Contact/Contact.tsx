@@ -1,5 +1,6 @@
 import { ContactCard } from './ContactCard';
 import { SocialLinks } from '../../components/SocialLinks';
+import { AnimatedBackground } from '../../components/AnimatedBackground';
 import contact from '../../data/contact.json';
 import type { Contact as ContactType } from '../../types/portfolio';
 
@@ -12,9 +13,10 @@ export function Contact() {
   return (
     <section
       id="contact"
-      className="min-h-screen py-20 bg-white dark:bg-gray-800"
+      className="min-h-screen py-20 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 relative overflow-hidden"
     >
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <AnimatedBackground variant="cyan" />
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">

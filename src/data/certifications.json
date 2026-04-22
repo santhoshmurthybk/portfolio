@@ -1,0 +1,23 @@
+[
+  {
+    "id": "mta",
+    "name": "Microsoft Technology Associate: Software Development Fundamentals",
+    "issuer": "Microsoft",
+    "credentialUrl": "https://www.credly.com/badges/00041f1d-998d-4443-b5aa-08680ab6bf95?source=linked_in_profile",
+    "logo": "microsoft"
+  },
+  {
+    "id": "ibm-design",
+    "name": "Enterprise Design Thinking Co-Creator",
+    "issuer": "IBM",
+    "credentialUrl": "https://www.credly.com/badges/fe0d9f15-bcd4-4585-b0c7-a6d5b44b7b7a?source=linked_in_profile",
+    "logo": "ibm"
+  },
+  {
+    "id": "aws-developer",
+    "name": "AWS Certified Developer - Associate",
+    "issuer": "Amazon Web Services",
+    "credentialUrl": "https://www.credly.com/badges/94525d30-a2f7-43ef-a53f-1ff292fa8363",
+    "logo": "aws"
+  }
+]

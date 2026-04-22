@@ -1,4 +1,5 @@
 import { ProjectCard } from './ProjectCard';
+import { AnimatedBackground } from '../../components/AnimatedBackground';
 import projects from '../../data/projects.json';
 import type { Project } from '../../types/portfolio';
 
@@ -11,9 +12,10 @@ export function Portfolio() {
   return (
     <section
       id="portfolio"
-      className="min-h-screen py-20 bg-gray-50 dark:bg-gray-900"
+      className="min-h-screen py-20 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 relative overflow-hidden"
     >
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <AnimatedBackground variant="primary" />
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">

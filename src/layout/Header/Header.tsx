@@ -44,13 +44,13 @@ export function Header({ activeSection = 'home' }: HeaderProps) {
       <header className="fixed top-0 left-0 right-0 z-40 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
         <nav className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Main navigation">
           <div className="flex items-center justify-between h-16">
-            {/* Logo */}
-            <a
-              href="#home"
+          {/* Name / Logo */}
+          <a
+            href="#home"
             onClick={(e) => handleNavClick(e, 'home')}
-            className="text-xl font-bold text-primary-600 dark:text-primary-400"
+            className="text-lg font-bold text-gray-900 dark:text-white hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
           >
-            Santhosh
+            Santhosh Murthy BK
           </a>
 
           {/* Desktop Navigation */}

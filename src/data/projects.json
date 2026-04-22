@@ -3,9 +3,9 @@
     "id": "covid-tracker",
     "title": "COVID Tracker",
     "description": "Real-time COVID-19 statistics tracker with interactive charts and global data visualization",
-    "imageUrl": "/assets/images/projects/covid-tracker.png",
-    "projectUrl": "https://github.com/santhoshbk/covid-tracker",
-    "githubUrl": "https://github.com/santhoshbk/covid-tracker",
+    "imageUrl": "/assets/images/projects/covid-19-tracker.png",
+    "projectUrl": "https://github.com/santhoshmurthybk/covid19-tracker",
+    "githubUrl": "https://github.com/santhoshmurthybk/covid19-tracker",
     "technologies": ["React", "Chart.js", "REST API"]
   },
   {
@@ -13,17 +13,17 @@
     "title": "WebDriver IO Framework",
     "description": "End-to-end testing automation framework using WebDriverIO with custom utilities and reporting",
     "imageUrl": "/assets/images/projects/webdriver-io.png",
-    "projectUrl": "https://github.com/santhoshbk/webdriver-io",
-    "githubUrl": "https://github.com/santhoshbk/webdriver-io",
+    "projectUrl": "https://github.com/santhoshmurthybk/webdriver-io-regression",
+    "githubUrl": "https://github.com/santhoshmurthybk/webdriver-io-regression",
     "technologies": ["WebDriverIO", "JavaScript", "Mocha"]
   },
   {
     "id": "react-graphql",
     "title": "React GraphQL App",
     "description": "Full-stack application demonstrating React frontend with GraphQL API backend integration",
-    "imageUrl": "/assets/images/projects/react-graphql.png",
-    "projectUrl": "https://github.com/santhoshbk/react-graphql",
-    "githubUrl": "https://github.com/santhoshbk/react-graphql",
-    "technologies": ["React", "GraphQL", "Node.js", "Apollo"]
+    "imageUrl": "/assets/images/projects/aws-amplify.png",
+    "projectUrl": "https://github.com/santhoshmurthybk/react-graphql-amplify",
+    "githubUrl": "https://github.com/santhoshmurthybk/react-graphql-amplify",
+    "technologies": ["React", "GraphQL", "Node.js", "Apollo", "AWS Amplify"]
   }
 ]

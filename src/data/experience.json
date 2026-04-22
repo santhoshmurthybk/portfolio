@@ -5,26 +5,26 @@
     "endDate": null,
     "title": "Senior Staff Engineer, Tech Lead",
     "company": "Nagarro Software",
-    "location": "India",
-    "description": "Developing microservices and front-end web components in the following technologies: React, Node, AWS, MongoDB"
+    "location": "Bengaluru, India",
+    "description": "• Leading a team of 6, including 1 data engineer, 4 full stack developers and 1 test engineer, specializing in Full stack development and Snowflake data platform technologies.\n• Design, develop, and maintain backend services and RESTful APIs using Node.js and TypeScript.\n• Design, develop and maintain frontend components written in ReactJS and automation using Playwright and TestCafe.\n• Build and manage serverless applications with AWS Lambda and API Gateway.\n• Integrate and manage data storage solutions with MongoDB, DynamoDB, and Amazon S3.\n• Implement event-driven architectures using Amazon EventBridge.\n• Monitor and optimize application performance using New Relic, Splunk, and CloudWatch.\n• Develop and maintain infrastructure as code (IaC) using AWS CDK.\n• Driving data governance, overseeing analytics projects, and delivering actionable insights through reporting."
   },
   {
-    "id": "oracle-cerner",
+    "id": "oracle",
     "startDate": "Apr, 2022",
     "endDate": "Mar, 2024",
-    "title": "Software Engineer III",
-    "company": "Oracle Cerner",
-    "location": "India",
-    "description": "Developing microservices and front-end web components in the following technologies: React, Angular, Node"
+    "title": "Software Engineer",
+    "company": "Oracle",
+    "location": "Bengaluru, India",
+    "description": "Part of OCHS - Oracle Cerner Healthcare Solutions.\n\nLed the migration of a Node.js, React, and GraphQL Data Warehousing project from MongoDB to CouchDB for cost reduction, while concurrently executing a lift-and-shift to Oracle Cloud Infrastructure from traditional On-prem hosting.\n\n• Developing web services and front-end web components utilizing the following technologies: JavaScript, React, GraphQL, Node.js, Express.\n• Collaborating with functional and design experts, as well as other technical leaders across the organization to define project requirements, technical design, and estimates.\n• Evaluating, enhancing, and documenting development processes that impact multiple teams.\n• Mentoring new software engineering associates on standard development processes, troubleshooting techniques, and development culture."
   },
   {
-    "id": "fluke",
+    "id": "tektronix",
     "startDate": "Jun, 2021",
     "endDate": "Apr, 2022",
     "title": "Software Design Engineer",
-    "company": "Fluke Corporation",
-    "location": "India",
-    "description": "Developing microservices and front-end web components in the following technologies: React, Redux, AWS S3, RDS, API Gateway, SignalR"
+    "company": "Tektronix",
+    "location": "Bengaluru, India",
+    "description": "• Building robust microservices architecture using NodeJS, Amazon API Gateway, AWS S3, AWS RDS, and Docker.\n• Crafting efficient frontend web components with ReactJS and Redux for seamless user experiences.\n• Developing middleware solutions utilizing SignalR to facilitate real-time data acquisition from Biomedical devices such as Electric Safety Analyzers, Defibrillator Analyzers, Gas Flow Analyzers, Patient Simulators, and Infusion Device Analyzers.\n• Automating build and deployment processes through the development of Cake and Wix scripts."
   },
   {
     "id": "cerner-senior",
@@ -33,7 +33,7 @@
     "title": "Associate Senior Software Engineer",
     "company": "Cerner Corporation",
     "location": "India",
-    "description": "Developed web services and front-end web components in the following technologies: JavaScript, React, GraphQL, Node.js, Express"
+    "description": "• Develop web services and front-end components with JavaScript, React, GraphQL, Node.js, and Express.\n• Work with teams to outline project needs, technical designs, and estimates.\n• Enhance development processes across teams and document improvements.\n• Guide new software engineers in standard practices, troubleshooting, and fostering development culture."
   },
   {
     "id": "cerner",
@@ -42,7 +42,7 @@
     "title": "Software Engineer",
     "company": "Cerner Corporation",
     "location": "India",
-    "description": "Worked as part of the application development team, contributing to team projects and developing applications and services"
+    "description": "• Worked as part of the application development team, contributing to team projects and developing applications and services.\n• Identified and implemented improvements to development processes to improve quality, reduce costs, and shorten delivery timelines.\n• Provided technical assistance relating to developed applications."
   },
   {
     "id": "ntt-senior",
@@ -51,7 +51,7 @@
     "title": "Software Development Senior Associate",
     "company": "NTT Data Services",
     "location": "India",
-    "description": "Developed custom modules & interfaces in C# .NET technologies"
+    "description": "• Worked on the rewrite of application from VB6 to MERN.\n• Ensure the best possible performance, quality, and responsiveness of applications.\n• Developed custom modules & interfaces in MERN technologies."
   },
   {
     "id": "ntt-intern",
@@ -60,6 +60,6 @@
     "title": "Software Development Intern",
     "company": "NTT Data Services",
     "location": "India",
-    "description": "Trained in C# .NET technologies and participated in project development"
+    "description": "Trained in NodeJS and ReactJS and developed a web application for the company using these technologies."
   }
 ]

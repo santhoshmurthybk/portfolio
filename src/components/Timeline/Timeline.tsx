@@ -63,7 +63,7 @@ function TimelineEntry({ item }: { item: TimelineItem }) {
           )}
         </p>
         {item.description && (
-          <p className="text-sm text-gray-600 dark:text-gray-400 mt-2">
+          <p className="text-sm text-gray-600 dark:text-gray-400 mt-2 whitespace-pre-line">
             {item.description}
           </p>
         )}

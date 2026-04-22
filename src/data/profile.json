@@ -4,11 +4,12 @@
   "greeting": "Hello",
   "typewriterPhrases": [
     "I am Santhosh.",
-    "I ❤ to design.",
-    "I ❤ to develop.",
-    "I ❤ to code."
+    "I am an AI enthusiast.",
+    "I love to design.",
+    "I love to develop.",
+    "I love to code."    
   ],
-  "bio": "Innovative optimised solution seeker, excited to be at the development phase of my career as a Full stack developer with 8+ years of extensive experience in participating in all phases of software development. Possess a strong attention to detail, well-developed time management skills, and ability to complete all projects within schedule and in a timely manner.",
+  "bio": "Innovative optimised solution seeker, excited to be at the development phase of my career as a Full stack developer with 10+ years of extensive experience in participating in all phases of software development. Possess a strong attention to detail, well-developed time management skills, and ability to complete all projects within schedule and in a timely manner.",
   "profileImageUrl": "/assets/images/profile.png",
   "cvUrl": "/assets/resume/Santhosh.pdf"
 }

@@ -69,3 +69,11 @@ export interface NavItem {
   label: string;
   href: string;
 }
+
+export interface Certification {
+  id: string;
+  name: string;
+  issuer: string;
+  credentialUrl: string;
+  logo: 'microsoft' | 'ibm' | 'aws' | 'google' | 'oracle';
+}

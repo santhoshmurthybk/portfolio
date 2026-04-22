@@ -3,21 +3,21 @@
     "id": "phone",
     "type": "phone",
     "label": "Phone",
-    "value": "+91 9876543210",
+    "value": "+91 7259481509",
     "icon": "BiPhone"
   },
   {
     "id": "email",
     "type": "email",
     "label": "Email",
-    "value": "santhosh@example.com",
+    "value": "santhoshmurthybk@gmail.com",
     "icon": "BiEnvelope"
   },
   {
     "id": "address",
     "type": "address",
     "label": "Location",
-    "value": "Hyderabad, India",
+    "value": "Bengaluru, India",
     "icon": "BiMap"
   }
 ]
