@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { BiLinkExternal, BiLogoGithub } from 'react-icons/bi';
 import { Card } from '../../components/Card';
+import { getAssetPath } from '../../utils/assets';
 import type { Project } from '../../types/portfolio';
 
 interface ProjectCardProps {
@@ -29,7 +30,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
         onMouseLeave={() => setIsHovered(false)}
       >
         <img
-          src={imageError ? PLACEHOLDER_IMAGE : project.imageUrl}
+          src={imageError ? PLACEHOLDER_IMAGE : getAssetPath(project.imageUrl)}
           alt={project.title}
           className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
           onError={handleImageError}

@@ -3,6 +3,7 @@ import { SiReact, SiTypescript, SiNodedotjs, SiAmazon, SiMongodb, SiGraphql, SiD
 import profile from '../../data/profile.json';
 import { TypewriterText } from './TypewriterText';
 import { createScrollHandler } from '../../utils/scrollTo';
+import { getAssetPath } from '../../utils/assets';
 import type { Profile } from '../../types/portfolio';
 
 const profileData = profile as Profile;
@@ -83,7 +84,7 @@ export function Hero() {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-4 animate-fadeInUp animation-delay-800">
               <a
-                href={profileData.cvUrl}
+                href={getAssetPath(profileData.cvUrl)}
                 download
                 className="btn-primary flex items-center gap-2 hover:scale-105 transition-transform"
               >
@@ -129,7 +130,7 @@ export function Hero() {
             
             {/* Profile Image */}
             <img
-              src={profileData.profileImageUrl}
+              src={getAssetPath(profileData.profileImageUrl)}
               alt={`${profileData.name} profile`}
               className="relative w-48 h-48 sm:w-64 sm:h-64 lg:w-80 lg:h-80 rounded-full object-cover shadow-2xl ring-4 ring-white dark:ring-gray-800 animate-fadeIn"
               loading="eager"
