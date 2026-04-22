@@ -65,14 +65,14 @@ describe('ContactCard', () => {
     expect(link).toHaveAttribute('href', 'tel:+12345678900');
   });
 
-  it('should not render link for location type', () => {
+  it('should not render link for address type', () => {
     render(
       <ContactCard
         contact={{
           id: '1',
           label: 'Location',
           value: 'New York, USA',
-          type: 'location',
+          type: 'address',
           icon: 'BiMap',
         }}
       />
